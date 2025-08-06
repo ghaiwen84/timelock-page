@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeLock - Soyez payé pour déconnecter</title>
+    <title>TimeLock - Get Paid to Disconnect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,76 +23,76 @@
         
         <div class="w-full max-w-md mx-auto bg-white rounded-2xl shadow-xl p-8 text-center">
 
-            <!-- Logo et Titre -->
+            <!-- Logo and Title -->
             <div class="mb-6">
                 <div class="mx-auto w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-4 shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h1 class="text-3xl font-bold text-gray-900">Soyez payé pour déconnecter.</h1>
-                <p class="text-gray-600 mt-2">Reprenez le contrôle de votre temps. TimeLock vous récompense pour chaque minute passée loin de votre écran.</p>
+                <h1 class="text-3xl font-bold text-gray-900">Get Paid to Disconnect.</h1>
+                <p class="text-gray-600 mt-2">Take back control of your time. TimeLock rewards you for every minute spent away from your screen.</p>
             </div>
 
-            <!-- Comment ça marche -->
+            <!-- How it works -->
             <div class="my-8 text-left space-y-4">
                 <div class="flex items-start">
                     <div class="flex-shrink-0 h-6 w-6 text-indigo-500 font-bold text-xl">1.</div>
-                    <p class="ml-3 text-gray-700"><strong>Lancez un défi :</strong> "Bloquez TikTok pendant 1h et gagnez 1 TimeCoin."</p>
+                    <p class="ml-3 text-gray-700"><strong>Set a challenge:</strong> "Block TikTok for 1 hour & earn 1 TimeCoin."</p>
                 </div>
                 <div class="flex items-start">
                     <div class="flex-shrink-0 h-6 w-6 text-indigo-500 font-bold text-xl">2.</div>
-                    <p class="ml-3 text-gray-700"><strong>Preuve automatique :</strong> Nous vérifions votre temps d'écran, sans effort.</p>
+                    <p class="ml-3 text-gray-700"><strong>Automatic proof:</strong> We verify your screen time, effortlessly.</p>
                 </div>
                 <div class="flex items-start">
                     <div class="flex-shrink-0 h-6 w-6 text-indigo-500 font-bold text-xl">3.</div>
-                    <p class="ml-3 text-gray-700"><strong>Soyez récompensé :</strong> Échangez vos TimeCoins contre de l'argent, des cadeaux ou des cryptos.</p>
+                    <p class="ml-3 text-gray-700"><strong>Get rewarded:</strong> Exchange your TimeCoins for cash, gifts, or crypto.</p>
                 </div>
             </div>
 
-            <!-- Formulaire d'inscription -->
+            <!-- Signup Form -->
             <div id="form-container">
-                <p class="font-semibold text-gray-800 mb-3">Prêt à reprendre le contrôle ?</p>
+                <p class="font-semibold text-gray-800 mb-3">Ready to take back control?</p>
                 <form id="waitlist-form" class="flex flex-col sm:flex-row gap-2">
-                    <input type="email" required placeholder="Votre adresse e-mail" class="flex-grow w-full px-4 py-3 bg-gray-100 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                    <input type="email" required placeholder="Your email address" class="flex-grow w-full px-4 py-3 bg-gray-100 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
                     <button type="submit" class="gradient-bg text-white font-bold py-3 px-6 rounded-lg shadow-md hover:opacity-90 transition transform hover:scale-105">
-                        Rejoindre la liste d'attente
+                        Join the Waitlist
                     </button>
                 </form>
-                 <p class="text-xs text-gray-500 mt-3">Soyez le premier informé et recevez un bonus au lancement !</p>
+                 <p class="text-xs text-gray-500 mt-3">Be the first to know and get a launch bonus!</p>
             </div>
             
-            <!-- Message de remerciement (caché initialement) -->
+            <!-- Thank You Message (hidden initially) -->
             <div id="thank-you-message" class="hidden text-center">
                  <div class="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                 </div>
-                <h2 class="text-2xl font-bold text-gray-900">Merci de votre intérêt !</h2>
-                <p class="text-gray-600 mt-2">Nous vous contacterons dès que l'application sera disponible. Vous faites désormais partie des pionniers !</p>
+                <h2 class="text-2xl font-bold text-gray-900">Thank you for your interest!</h2>
+                <p class="text-gray-600 mt-2">We'll contact you as soon as the app is available. You're now one of the pioneers!</p>
             </div>
 
         </div>
         <footer class="text-center mt-8 text-gray-500 text-sm">
-            <p>&copy; 2025 TimeLock - Une nouvelle vision du temps.</p>
+            <p>&copy; 2025 TimeLock - A new vision of time.</p>
         </footer>
     </div>
 
     <script>
-        // Script pour simuler l'inscription et afficher le message de remerciement
+        // Script to simulate signup and show thank you message
         const formContainer = document.getElementById('form-container');
         const thankYouMessage = document.getElementById('thank-you-message');
         const waitlistForm = document.getElementById('waitlist-form');
 
         waitlistForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Empêche l'envoi réel du formulaire
+            event.preventDefault(); // Prevents the form from actually submitting
             
-            // On récupère l'email pour une éventuelle future utilisation (ici, juste pour la démo)
+            // Get the email for potential future use (here, just for the demo)
             const email = event.target.querySelector('input[type="email"]').value;
-            console.log('Email collecté (simulation) :', email);
+            console.log('Email collected (simulation):', email);
 
-            // On cache le formulaire et on affiche le message de remerciement
+            // Hide the form and show the thank you message
             formContainer.classList.add('hidden');
             thankYouMessage.classList.remove('hidden');
         });
@@ -100,3 +100,5 @@
 
 </body>
 </html>
+
+
